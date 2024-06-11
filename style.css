@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Reddit Sans", sans-serif;
+}
+.main-container{
+    width: 100%;
+    height: 800px;
+    background-color: #264eee;
+}
+.nav{
+    width: 100%;
+    height: 90px;
+    display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: transparent;
+}
+.nav img{
+    width: 11%;
+    /* margin-right: 40px; */
+}
+.nav span{
+    display: flex;
+}
+.nav ul{
+    list-style: none;
+    font-size: 100%;
+    color: rgb(220, 220, 220);
+    display: flex;
+    align-items: center; 
+    gap: 35px;
+    font-weight: 600;
+
+}
+.nav ul li:hover{
+    color: white;
+}
+.nav span button{
+    width: 100px;
+    height: 40px;
+    font-size: 100%;
+    color: white;
+    /* border: none; */
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 7px;
+    margin-inline: 50px;
+
+}
+.nav ul li button:hover{
+    color: rgb(212, 208, 208);
+}
+
+.hero-section{
+    width: 100%;
+    height:auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: end;
+    /* margin-right: 150px; */
+    /* padding-right: 12px; */
+
+}
+.hero-section .text-part{
+    width: 50%;
+    /* background-color: red; */
+
+    height: auto;
+    /* padding-block: 10%/; */
+    margin-top: 5%;
+    padding-left: 240px;
+    
+    /* display: flex;
+    align-items: center;justify-content: center;
+    flex-direction: column;
+    text-align: start; */
+    /* line-height: 60px; */
+}
+ 
+
+ 
+.hero-section .text-part h1{
+    font-size: 350%;
+    color: white;
+    font-weight: 400;
+    /* background-color: red; */
+}
+.hero-section .text-part h6{
+    font-size: 120%;
+    color: rgba(222, 219, 219, 0.836);
+    line-height: 150%;
+    font-weight: 400;
+    margin-top: 10%;
+    padding-left: 5%;
+    border-left: 5px solid rgba(164, 162, 162, 0.815);
+}
+.hero-section .text-part button{
+    width: 30%;
+    height: 8%;
+    font-size: 100%;
+    color: white;
+    background-color: #ff4b36;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10%;
+    transition: 0.3s ease-in-out;
+
+}
+.hero-section .text-part .icon-section{
+    width: 100%;
+    height: 30%;
+    /* background-color: red; */
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.icon-section .box-1{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    
+    /* text-align: start; */
+    /* background-color: yellow; */
+}
+.icon-section .box-1 img{
+    width: 90%;
+}
+.icon-section .box-1 h3{
+    font-size: 140%;
+    margin-top: 40%;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.647);
+}
+
+.hero-section .img-part{
+    width: 50%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.hero-section .img-part img{
+    width: 100%;
+    /* background-color: red; */
+}
+
+@media (max-width:768px){
+    *{
+        border:1px solid red;
+    }
+    .main-container{
+        height: auto;
+    }
+    .nav{
+        width: auto;
+        height: 80px;
+        justify-content: space-between;
+        /* margin-left: 5%; */
+        /* margin-inline: 20px; */
+        /* background-color: yellow; */
+    }
+    
+
+     
+    .nav img{
+        width: 25%;
+        /* background-color: yellow; */
+    }
+    .nav ul{
+        display: none;
+    }
+    .nav span  button{
+        width: 70%;
+        height: 70%;
+        font-size:16px;
+        padding: 5%;
+        border-radius: 5px;
+        margin-right: 100px;
+        /* background-color: yellow; */
+    }
+
+
+    .hero-section{
+        flex-direction: column-reverse;
+        width: 100%;
+        /* background-color:yellow; */
+    }
+.hero-section .img-part{
+    width: 100%;
+}
+.hero-section .img-part img{
+    width: 90%;
+}
+.hero-section .text-part{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+    
+    /* background-color: yellow; */
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.text-part h1{
+    font-size: 300px;
+}
+
+.hero-section .text-part h6{
+    margin-top: 0%;
+    border: none;
+}
+
+.hero-section .text-part button{
+    width: 20%;
+    height: 40px;
+    margin-top: 5%;
+}
+
+.hero-section .text-part .icon-section{
+    width: 70%;
+    margin-top: 8%;
+}
+
+}
+
